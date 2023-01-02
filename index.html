@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <form onsubmit="return getCoordinates(event)">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+        <input type="submit" value="Submit" />
+      </form>
+      <div id="error"></div>
+      <div id="map" style="width: 700px; height: 700px"></div>
+    </main>
+
+    <script src="pwc.js"></script>
+  </body>
+</html>
